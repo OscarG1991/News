@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = Promise;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines"
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongolab-aerodynamic-78474"
 mongoose.connect(MONGODB_URI)
 const db = mongoose.connection
 
