@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 mongoose.Promise = Promise;
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongolab-parallel-68682"
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://oscarg91:Test1234@ds347665.mlab.com:47665/heroku_31fd6vd3"
 mongoose.connect(MONGODB_URI)
 const db = mongoose.connection
 
