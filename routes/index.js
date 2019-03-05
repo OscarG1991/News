@@ -20,7 +20,7 @@ router.get('/scraper', (req,res) =>  {
       var x = $(elem)
       article.title = x.find('h3').text().trim();
       article.summary = x.find('p').text().trim();
-      article.link = "https://www.gamespot.com" + x.find('a').attr('href');
+      article.link = x.find('a').attr('href');
       article.image = x.find('img').attr('src');
 
       console.log(article);
